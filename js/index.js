@@ -16,7 +16,7 @@ function equation(){
             xi = 'Нема коренів';
             return xi;
         }else{
-            if (D==0){
+            if (D===0){
                 y=-b/a*2;
             }
         }
