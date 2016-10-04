@@ -4,7 +4,7 @@ var c = Number(prompt('Введіть значення c'));
 var D = (b*b) - 4*a*c;
 alert (D);
 
-var x1, x2, y, z;
+var x1, x2, y, xi;
 function equation(){
     if (D>0) {
         D = Math.sqrt (D);
@@ -13,8 +13,8 @@ function equation(){
         return x1,x2;
     } else {
         if (D<0){
-            z = 'Нема коренів';
-            return z;
+            xi = 'Нема коренів';
+            return xi;
         }else{
             if (D==0){
                 y=-b/a*2;
@@ -23,5 +23,5 @@ function equation(){
     }
 }
 alert (equation(y));
-alert (equation(z));
+alert (equation(xi));
 alert(equation(x1,x2));
